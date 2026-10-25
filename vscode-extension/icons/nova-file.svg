@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Nova file">
+  <path fill="#182235" d="M13 3h26l12 12v42a4 4 0 0 1-4 4H13a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4z"/>
+  <path fill="#7dd3fc" d="M39 3v12h12z"/>
+  <path fill="#a78bfa" d="M32 18l4.1 9.9L46 32l-9.9 4.1L32 46l-4.1-9.9L18 32l9.9-4.1z"/>
+  <circle cx="46" cy="18" r="3" fill="#fbbf24"/>
+</svg>

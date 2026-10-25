@@ -1,0 +1,18 @@
+# Lists, dictionaries, loops, functions, and conditions.
+let inventory = {"apples": 4, "oranges": 6}
+let total = 0
+
+for amount in [inventory["apples"], inventory["oranges"]]:
+  total = total + amount
+end
+
+func label(count):
+  if count >= 10:
+    return "well stocked"
+  else:
+    return "low stock"
+  end
+end
+
+print("Total:", total)
+print(label(total))

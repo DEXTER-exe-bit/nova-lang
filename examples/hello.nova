@@ -1,0 +1,12 @@
+# Run with: python main.py examples/hello.nova
+let name = "Dexter"
+let age = 15
+let skills = ["Python", "Nova"]
+
+func greeting(person):
+  return "Hello, " + person + "!"
+end
+
+print(greeting(name))
+print("Age:", age)
+print("First skill:", skills[0])

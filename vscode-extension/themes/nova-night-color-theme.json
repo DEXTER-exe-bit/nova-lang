@@ -1,0 +1,24 @@
+{
+  "name": "Nova Night",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#101623",
+    "editor.foreground": "#d7e3f4",
+    "editorLineNumber.foreground": "#52647d",
+    "editorLineNumber.activeForeground": "#a8c5eb",
+    "editorCursor.foreground": "#fbbf24",
+    "editor.selectionBackground": "#293d5b",
+    "editor.inactiveSelectionBackground": "#1c2b40"
+  },
+  "tokenColors": [
+    { "scope": "comment.line.number-sign.nova", "settings": { "foreground": "#718096", "fontStyle": "italic" } },
+    { "scope": "keyword.control.nova, keyword.declaration.nova, keyword.declaration.function.nova", "settings": { "foreground": "#c4b5fd", "fontStyle": "bold" } },
+    { "scope": "entity.name.function.nova", "settings": { "foreground": "#7dd3fc" } },
+    { "scope": "support.function.builtin.nova", "settings": { "foreground": "#67e8f9" } },
+    { "scope": "string.quoted.nova", "settings": { "foreground": "#86efac" } },
+    { "scope": "constant.numeric.nova", "settings": { "foreground": "#fbbf24" } },
+    { "scope": "constant.language.nova", "settings": { "foreground": "#fb923c" } },
+    { "scope": "keyword.operator.nova", "settings": { "foreground": "#f9a8d4" } },
+    { "scope": "variable.other.nova", "settings": { "foreground": "#d7e3f4" } }
+  ]
+}

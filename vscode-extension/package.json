@@ -1,0 +1,60 @@
+{
+  "name": "nova-language-dex",
+  "displayName": "DexterNova Nova Language",
+  "description": "Syntax highlighting, file icons, and a color theme for Nova source files.",
+  "version": "0.1.1",
+  "publisher": "DexterNova",
+  "icon": "./icons/nova-logo.png",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Themes"
+  ],
+  "keywords": [
+    "nova",
+    "language",
+    "syntax highlighting"
+  ],
+  "files": [
+    "language-configuration.json",
+    "syntaxes/**",
+    "icons/**",
+    "themes/**",
+    "README.md",
+    "LICENSE"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "nova",
+        "aliases": ["Nova", "nova"],
+        "extensions": [".nova"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "nova",
+        "scopeName": "source.nova",
+        "path": "./syntaxes/nova.tmLanguage.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "nova-icons",
+        "label": "Nova Icons",
+        "path": "./icons/nova-icon-theme.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Nova Night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/nova-night-color-theme.json"
+      }
+    ]
+  }
+}

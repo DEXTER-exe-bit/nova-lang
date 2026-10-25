@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+vscode-extension/*.vsix
+
+# Local coverage, environment files, and logs
+.coverage
+htmlcov/
+.env
+.env.*
+*.log
+
+# Native build outputs
+*.exe
+*.dll
+*.obj
+*.pdb
+*.ilk
+*.generated.c
+nova-build/

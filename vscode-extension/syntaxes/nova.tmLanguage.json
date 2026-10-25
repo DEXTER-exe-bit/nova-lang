@@ -1,0 +1,89 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Nova",
+  "scopeName": "source.nova",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#function-declarations" },
+    { "include": "#builtins" },
+    { "include": "#keywords" },
+    { "include": "#constants" },
+    { "include": "#numbers" },
+    { "include": "#operators" },
+    { "include": "#identifiers" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        { "name": "comment.line.number-sign.nova", "match": "#.*$" }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.nova",
+          "begin": "\\\"",
+          "end": "\\\"",
+          "patterns": [
+            { "name": "constant.character.escape.nova", "match": "\\\\[ntr\\\\\\\"']" }
+          ]
+        },
+        {
+          "name": "string.quoted.single.nova",
+          "begin": "'",
+          "end": "'",
+          "patterns": [
+            { "name": "constant.character.escape.nova", "match": "\\\\[ntr\\\\\\\"']" }
+          ]
+        }
+      ]
+    },
+    "function-declarations": {
+      "patterns": [
+        {
+          "match": "\\b(func)\\s+([A-Za-z_][A-Za-z0-9_]*)",
+          "captures": {
+            "1": { "name": "keyword.declaration.function.nova" },
+            "2": { "name": "entity.name.function.nova" }
+          }
+        }
+      ]
+    },
+    "builtins": {
+      "patterns": [
+        { "name": "support.function.builtin.nova", "match": "\\b(?:print|len|range|type)\\b(?=\\s*\\()" }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        { "name": "keyword.control.nova", "match": "\\b(?:if|elif|else|end|while|for|in|return)\\b" },
+        { "name": "keyword.declaration.nova", "match": "\\blet\\b" }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        { "name": "constant.language.nova", "match": "\\b(?:true|false|nil)\\b" }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        { "name": "constant.numeric.nova", "match": "\\b(?:[0-9]+(?:\\.[0-9]+)?)\\b" }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        { "name": "keyword.operator.nova", "match": "(?:==|!=|<=|>=|//|[+\\-*/%<>=])|\\b(?:and|or|not)\\b" },
+        { "name": "punctuation.section.braces.nova", "match": "[{}]" },
+        { "name": "punctuation.section.brackets.nova", "match": "[\\[\\]]" },
+        { "name": "punctuation.section.parens.nova", "match": "[()]" },
+        { "name": "punctuation.separator.nova", "match": "[:,.]" }
+      ]
+    },
+    "identifiers": {
+      "patterns": [
+        { "name": "variable.other.nova", "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b" }
+      ]
+    }
+  }
+}
